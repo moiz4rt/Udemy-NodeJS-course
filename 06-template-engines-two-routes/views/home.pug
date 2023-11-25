@@ -1,0 +1,10 @@
+extends layouts/main
+
+block content
+    main
+        form(method="POST", action="/add-user")
+            label(for="name") Name
+            input#name(type="text", placeholder="User name", name="userName")
+            label(for="age") Age
+            input#age(type="number", placeholder="Please, enter your age", name="userAge")
+            button(type="submit") Send

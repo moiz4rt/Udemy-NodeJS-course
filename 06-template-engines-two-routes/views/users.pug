@@ -1,0 +1,12 @@
+extends layouts/main
+
+block content 
+    main
+        h1 Users
+        if users.length > 0
+            ul.users-list
+                each user in users
+                    li.users-list__item
+                        p.users-list__text Name: #{ user.name } <br> Age: #{ user.age }
+        else
+            h1 No Users

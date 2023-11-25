@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{ pageTitle }
+        link(rel="stylesheet", href="/css/main.css")
+    body 
+        header.main-header
+            nav.main-header__nav
+                ul.main-header__list-items
+                    li.main-header__item
+                        a(href="/") Home
+                    li.main-header__item
+                        a(href="/users") Users
+
+        block content
